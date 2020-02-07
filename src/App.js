@@ -1,9 +1,10 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { writeToDocument } from "./helper";
 
 function App() {
-  document.write(decodeURIComponent(window.location.search)); // Danger-Zone
+  writeToDocument(decodeURIComponent(window.location.search));
   return (
     <div className="App">
       <header className="App-header">
