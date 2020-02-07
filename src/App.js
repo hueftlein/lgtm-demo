@@ -1,8 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  document.write(decodeURIComponent(window.location.search)); // Danger-Zone
   return (
     <div className="App">
       <header className="App-header">
